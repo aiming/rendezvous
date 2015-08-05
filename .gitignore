@@ -33,3 +33,5 @@
 !.env.sample
 
 *.zip
+vendor/bundle
+public/assets

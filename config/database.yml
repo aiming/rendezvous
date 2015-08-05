@@ -20,7 +20,7 @@ production:
   encoding: utf8
   reconnect: false
   pool: 5
-  host: rendezvous.production
-  database: rendezvous
-  username: xxxxxxxxxxxxxx
-  password: xxxxxxxxxxxxxx
+  host: 173.194.85.37
+  database: rendezvous_production
+  username: rendezvous
+  password: rendezvous

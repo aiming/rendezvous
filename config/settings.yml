@@ -1,17 +1,13 @@
 defaults: &defaults
   rendezvous:
+    app_host: https://rendezvous.aiming-inc.biz/
 
-    # For amil body
-    app_host: <%= ENV['RV_RENDEZVOUS_APP_HOST'] %>
+  permited_login_domain: aiming-inc.com
 
-  permited_login_domain: <%= ENV['RV_PERMITTED_LOGIN_DOMAIN'] %>
-
-  # For login
   google_api:
-    client_id: <%= ENV['RV_GOOGLE_API_CLIENT_ID'] %>
-    secret: <%= ENV['RV_GOOGLE_API_SECRET'] %>
+    client_id: 747447196694-t99hgok3h0r1dp0f9qts3lehpmpfpqsu.apps.googleusercontent.com
+    secret: bpBWI1xG_GHOwYE8RLZAjoSA
 
-  # For file upload
   s3:
     access_key_id: <%= ENV['RV_S3_ASSESS_KEY_ID'] %>
     secret_access_key: <%= ENV['RV_S3_SECRET_ACCESS_KEY'] %>
@@ -26,7 +22,7 @@ defaults: &defaults
   google_analytics: <%= ENV['RV_GOOGLE_ANALYTICS_ID'] %>
 
   # optional
-  enable_pdf_uploading: <%= ENV['RV_PDF_UPLOADING'].present? %>
+  enable_pdf_uploading: true
 
 development:
   <<: *defaults
